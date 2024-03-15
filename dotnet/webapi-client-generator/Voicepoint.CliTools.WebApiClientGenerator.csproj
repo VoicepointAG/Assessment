@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <Version>1.0.0</Version>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp2.1'">
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp2.2'">
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp3.1'">
+    <FrameworkReference Include="Microsoft.AspNetCore.App"></FrameworkReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net7.0'">
+    <FrameworkReference Include="Microsoft.AspNetCore.App"></FrameworkReference>
+  </ItemGroup>
+
+  <!-- NSwag -->
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NSwag.CodeGeneration.TypeScript" Version="12.3.1" />
+    <PackageReference Include="NSwag.SwaggerGeneration.WebApi" Version="12.3.1" />
+
+    <!-- Consolidate NSwag -->
+    <PackageReference Include="System.IO.FileSystem.Primitives" Version="4.3" />
+    <PackageReference Include="System.Text.Encoding.Extensions" Version="4.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>

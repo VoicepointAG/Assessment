@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Voicepoint.Assessment</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="dotnet run --project &quot;$(ProjectDir)..\webapi-client-generator\Voicepoint.CliTools.WebApiClientGenerator.csproj&quot; &quot;$(ProjectDir)$(OutDir)voicepoint-assessment.dll&quot; &quot;$(ProjectDir)..\..\web\voicepoint-assessment\src\app\api\web-api.module.ts&quot;" />
+  </Target>
+
+</Project>

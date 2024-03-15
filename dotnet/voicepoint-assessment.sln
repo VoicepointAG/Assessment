@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "voicepoint-assessment", ".\voicepoint-assessment\voicepoint-assessment.csproj", "{3258A4C8-2453-424F-B0E4-27D3317724D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "voicepoint-assessment.Tests", ".\voicepoint-assessment.Tests\voicepoint-assessment.Tests.csproj", "{020E024C-7F19-416D-A904-2536B786F70F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Voicepoint.CliTools.WebApiClientGenerator", ".\webapi-client-generator\Voicepoint.CliTools.WebApiClientGenerator.csproj", "{1803BFF5-B35A-45F1-8742-9CFD12DB27A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{A065C3F5-8877-49C8-A534-F3F774691F4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{ABF7FD66-5194-42DD-8131-EBFE7D459A19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C4B50B0E-8DFF-46C0-A81F-505227602F36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3258A4C8-2453-424F-B0E4-27D3317724D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3258A4C8-2453-424F-B0E4-27D3317724D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3258A4C8-2453-424F-B0E4-27D3317724D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3258A4C8-2453-424F-B0E4-27D3317724D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{020E024C-7F19-416D-A904-2536B786F70F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{020E024C-7F19-416D-A904-2536B786F70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{020E024C-7F19-416D-A904-2536B786F70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{020E024C-7F19-416D-A904-2536B786F70F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1803BFF5-B35A-45F1-8742-9CFD12DB27A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1803BFF5-B35A-45F1-8742-9CFD12DB27A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1803BFF5-B35A-45F1-8742-9CFD12DB27A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1803BFF5-B35A-45F1-8742-9CFD12DB27A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3258A4C8-2453-424F-B0E4-27D3317724D3} = {ABF7FD66-5194-42DD-8131-EBFE7D459A19}
+		{020E024C-7F19-416D-A904-2536B786F70F} = {C4B50B0E-8DFF-46C0-A81F-505227602F36}
+		{1803BFF5-B35A-45F1-8742-9CFD12DB27A2} = {A065C3F5-8877-49C8-A534-F3F774691F4A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6307EE44-8ABA-4E57-9BCD-230D548632C4}
+	EndGlobalSection
+EndGlobal

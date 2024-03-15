@@ -1,0 +1,19 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+
+  .picture-area {
+    width: 100%;
+    margin-right: 16px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .input-area {
+    width: 400px;
+  }
+}

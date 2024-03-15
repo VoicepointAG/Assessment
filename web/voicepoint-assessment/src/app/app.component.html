@@ -1,0 +1,14 @@
+<h1>Hangman</h1>
+<div class="container">
+  <mat-card class="picture-area">
+    <img [src]="this.imageSource" [alt]="this.imageSource" />
+  </mat-card>
+  <mat-card class="input-area">
+    <mat-form-field appearance="fill">
+      <mat-label>Your Name:</mat-label>
+      <input matInput [(ngModel)]="this.name" (change)="this.onNameChange()">
+    </mat-form-field>
+    <br />
+    {{this.greeting}}
+  </mat-card>
+</div>
